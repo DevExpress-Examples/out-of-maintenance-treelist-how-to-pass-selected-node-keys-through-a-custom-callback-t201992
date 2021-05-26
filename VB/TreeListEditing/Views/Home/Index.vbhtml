@@ -16,9 +16,9 @@
     }
 </script>
 @Html.Partial("TreeListPartial", Model)
-@Html.DevExpress().Button( _
-    Sub(settings)
-            settings.Name = "btnCustomCallback"
-            settings.Text = "Pass All Selected Keys Through Custom Callback"
-            settings.ClientSideEvents.Click = "OnClick"
-    End Sub).GetHtml()
+@Html.DevExpress().Button(
+                Sub(settings)
+                    settings.Name = "btnCustomCallback"
+                    settings.Text = "Pass All Selected Keys Through Custom Callback"
+                    settings.ClientSideEvents.Click = "OnClick"
+                End Sub).GetHtml()
